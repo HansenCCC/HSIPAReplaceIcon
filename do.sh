@@ -11,5 +11,5 @@ sh make_ios_replaceIcon.sh KKDemo.ipa /Users/Hansen/iOS/HSIPAReplaceIcon/channel
 
 sh make_ios_replaceIcon.sh KKDemo.ipa /Users/Hansen/iOS/HSIPAReplaceIcon/channel/channel005
 
-
-
+#移除临时文件
+rm -r Payload
