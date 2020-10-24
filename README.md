@@ -1,6 +1,11 @@
 # HSIPAReplaceIcon
 脚本自动化批量修改ipa的icon、启动图、APP名称等(demo只修改icon，其他原理一样)、重签ipa
 
+
+<img src="https://raw.githubusercontent.com/HansenCCC/HSIPAReplaceIcon/main/WechatIMG14.jpeg"  width="400">
+
+<video src="http://vfx.mtime.cn/Video/2019/03/18/mp4/190318214226685784.mp4" controls="controls">您的浏览器不支持播放该视频！</video>
+
 ## 运行环境
 ### 编译系统：苹果Mac
 ### 编译系统版本：MacOS Catalina 10.15.7
@@ -19,7 +24,7 @@
 （channel是用来模拟器多渠道）
 
 ## 思路
-技术思路：解压ipa文件，替换assets.car(更好的方式是解压assets.car文件，替换icon，再压缩)文件，修改info.plist对于参数。压缩成ipa文件。再对ipa重新签名。
+技术思路：解压ipa文件，替换assets.car(更好的方式是解压assets.car文件，替换icon，再压缩，这样速度更快)文件，修改info.plist对于参数。压缩成ipa文件。再对ipa重新签名。
 
 技术难点：好像也没啥难点，就是有点地方卡主很久了，不知道是不是xcode12或者ios 14系统的特性，修改直接修改icon不生效，需要替换资源文件assets.car才生效。（有了解的朋友可以私聊我，可能游戏使用unit3d开发，然后ipa是没有assets.car文件的，外面的icon优先级高）。证书什么的我就不上去了，想试试的可以用自己的证书和描述文件。
 
