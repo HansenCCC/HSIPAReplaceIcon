@@ -11,29 +11,29 @@
 ## 使用文档
 1、cd到当前文档路径
 
-2、fasdfalsdj 
+2、终端输入 sh do.sh 
 ```
- 赋值FASTLANE_MAC_PASSWORD为当前Mac开机密码
- 赋值FASTLANE_APPLEID为需要添加的appid账号
- 赋值FASTLANE_PASSWORD为需要添加的appid密码
- 赋值FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD(进入苹果官网生成的特殊密码APP-SPECIFIC https://appleid.apple.com/account/manage)
- 赋值FASTLANE_SESSION(执行fastlane spaceauth -u user@email.com，生成session cookie)
+ 赋值make_ios_replaceIcon.sh 常量 KSigningIdentity（证书名字）
+ 赋值make_ios_replaceIcon.sh 常量 KMobileprovision（描述文件）
 ```
+（channel是用来模拟器多渠道）
 
 ## 思路
-#修改icon思路，解压ipa文件，替换assets.car(更好的方式是解压assets.car文件，替换icon，再压缩)文件，修改info.plist对于参数。压缩成ipa文件。再对ipa重新签名。
+技术思路：解压ipa文件，替换assets.car(更好的方式是解压assets.car文件，替换icon，再压缩)文件，修改info.plist对于参数。压缩成ipa文件。再对ipa重新签名。
 
-#技术难点，好像也没啥难点，就是有点地方卡主很久了，不知道是不是xcode12或者ios 14系统的特性，修改直接修改icon不生效，需要替换资源文件assets.car才生效。（有了解的朋友可以私聊我，可能游戏使用unit3d开发，然后ipa是没有assets.car文件的，外面的icon优先级高）。证书什么的我就不上去了，想试试的可以用自己的证书和描述文件。
+技术难点：好像也没啥难点，就是有点地方卡主很久了，不知道是不是xcode12或者ios 14系统的特性，修改直接修改icon不生效，需要替换资源文件assets.car才生效。（有了解的朋友可以私聊我，可能游戏使用unit3d开发，然后ipa是没有assets.car文件的，外面的icon优先级高）。证书什么的我就不上去了，想试试的可以用自己的证书和描述文件。
 
-#以下重签方法任选一种
-    #重签方法一
-    #codesign -f -s "Apple Distribution: Hengsheng cheng (TB5KM6Y5DQ)" --entitlements ExportOptions.plist Payload/KKDemo.app
-    #重签方法二
-    #sigh resign
-    #重签方法三
-    #fastlane -> sigh
-    #fastlane sigh resign ./path/app.ipa --signing_identity "iPhone Distribution: Felix Krause" -p "my.mobileprovision"
 
+```
+以下重签方法任选一种
+    1、重签方法一
+    codesign -f -s "Apple Distribution: Hengsheng cheng (TB5KM6Y5DQ)" --entitlements ExportOptions.plist Payload/KKDemo.app
+    2、重签方法二
+    sigh resign
+    3、重签方法三
+    fastlane -> sigh
+    fastlane sigh resign ./path/app.ipa --signing_identity "iPhone Distribution: Felix Krause" -p "my.mobileprovision"    
+```
 
 ## 参考文档
 #### 参考文档https://docs.fastlane.tools/actions/sigh/
