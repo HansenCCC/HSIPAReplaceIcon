@@ -2,9 +2,11 @@
 脚本自动化批量修改ipa的icon、启动图、APP名称等(demo只修改icon，其他原理一样)、重签ipa
 
 
-<img src="https://raw.githubusercontent.com/HansenCCC/HSIPAReplaceIcon/main/WechatIMG14.jpeg"  width="400">
+<img src="https://img.qiifun.com/1603562993.149103.png"  width="400">
 
-<video src="http://vfx.mtime.cn/Video/2019/03/18/mp4/190318214226685784.mp4" controls="controls">您的浏览器不支持播放该视频！</video>
+
+<img src="https://img.qiifun.com/1603562883.768281.png"  width="400">
+
 
 ## 运行环境
 ### 编译系统：苹果Mac
