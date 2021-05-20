@@ -1,11 +1,16 @@
 # HSIPAReplaceIcon
+[![Build Status](https://img.shields.io/badge/Github-HSIPAReplaceIcon-brightgreen.svg)](https://github.com/HansenCCC/HSIPAReplaceIcon)
+[![Build Status](https://img.shields.io/badge/platform-ios-orange.svg)](https://github.com/HansenCCC/HSIPAReplaceIcon)
+[![Build Status](https://img.shields.io/badge/HansenCCC-Github-blue.svg)](https://github.com/HansenCCC)
+[![Build Status](https://img.shields.io/badge/HansenCCC-知乎-lightgrey.svg)](https://www.zhihu.com/people/EngCCC)
+
 脚本自动化批量修改ipa的icon、启动图、APP名称等(demo只修改icon，其他原理一样)、重签ipa
 
 
-<img src="https://raw.githubusercontent.com/HansenCCC/HSIPAReplaceIcon/main/WechatIMG38.png"  width="400">
+<img src="http://i1.fuimg.com/737869/2074cf2105aae931.png"  width="400">
 
 
-<img src="https://raw.githubusercontent.com/HansenCCC/HSIPAReplaceIcon/main/WechatIMG14.jpeg"  width="400">
+<img src="http://i1.fuimg.com/737869/544de7bb6cae051c.jpg"  width="400">
 
 
 
@@ -53,3 +58,21 @@
 #### Copyright © 2020 力王. All rights reserved.
 #### QQ:2534550460@qq.com  GitHub:https://github.com/HansenCCC  tel:13767141841
 #### copy请标明出处，感谢
+
+------------
+
+## 你还对这些感兴趣吗
+
+1、[iOS实现HTML H5秒开、拦截请求替换资源、优化HTML加载速度][1]
+
+2、[超级签名中最重要的一步：跳过双重认证，自动化脚本添加udid并下载描述文件（证书和bundleid不存在时，会自动创建）][2]
+
+3、[脚本自动化批量修改ipa的icon、启动图、APP名称等(demo只修改icon，其他原理一样)、重签ipa][3]
+
+4、[QMKKXProduct iOS技术分享][4]
+
+
+  [1]: https://github.com/HansenCCC/KKQuickDraw
+  [2]: https://github.com/HansenCCC/HSAddUdids
+  [3]: https://github.com/HansenCCC/HSIPAReplaceIcon
+  [4]: https://github.com/HansenCCC/QMKKXProduct
