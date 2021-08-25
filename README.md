@@ -7,10 +7,10 @@
 脚本自动化批量修改ipa的icon、启动图、APP名称等(demo只修改icon，其他原理一样)、重签ipa
 
 
-<img src="http://i1.fuimg.com/737869/2074cf2105aae931.png"  width="400">
+<img src="https://pic3.zhimg.com/80/v2-4b6246b3f4706cfc88043c61595a5446.jpg"  width="400">
 
 
-<img src="http://i1.fuimg.com/737869/544de7bb6cae051c.jpg"  width="400">
+<img src="https://pic3.zhimg.com/80/v2-37f35176bd4aa305e8b141cef6c7c05e_720w.jpg"  width="400">
 
 
 
